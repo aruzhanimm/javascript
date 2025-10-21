@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment #6: JavaScript Basics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Assignment #6. JavaScript Basics</h1>
+            <div class="student-info">Student: Kartam Aruzhan</div>
+            <div class="student-info">Group: SE-2423</div>
+        </header>
+
+        <div class="section">
+            <h2>Part 1. Introduction to JavaScript</h2>
+
+            <div class="task">
+                <h3>Task 0. First Script</h3>
+                <p>Create an HTML page and include a JavaScript file. Use console.log() to print your name and group. Write a script that shows an alert message: "Hello, JavaScript World!".</p>
+                <button id="showAlert">Show Alert</button>
+                <div class="code-block">
+                    // Check the browser console for name and group output<br>
+                    console.log("Student: Kartam Aruzhan");<br>
+                    console.log("Group:SE-2423");
+                </div>
+            </div>
+
+            <div class="task">
+                <h3>Task 1. Variables & Operators</h3>
+                <p>Declare variables of different data types (string, number, boolean). Perform arithmetic operations and display the results in the console. Concatenate strings and print them in the console.</p>
+                <button id="runVariablesDemo">Run Variables Demo</button>
+                <div id="variablesOutput" class="code-block">
+                    // Output will appear here after clicking the button
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Part 2. DOM Manipulation</h2>
+
+            <div class="task">
+                <h3>Task 2. Changing Content</h3>
+                <p>Create a paragraph and a button. When the button is clicked, change the paragraph text to something new.</p>
+                <p id="changeableParagraph">This is the original paragraph text. Click the button to change me!</p>
+                <button id="changeParagraph">Change Paragraph Text</button>
+            </div>
+
+            <div class="task">
+                <h3>Task 3. Changing Styles</h3>
+                <p>Create a div container. Add a button that changes the background color and another that changes the font size.</p>
+                <div id="styleBox" class="box">
+                    This is a styleable box
+                </div>
+                <button id="changeBgColor">Change Background Color</button>
+                <button id="changeFontSize">Change Font Size</button>
+            </div>
+
+            <div class="task">
+                <h3>Task 4. Creating & Removing Elements</h3>
+                <p>Create buttons to add and remove list items.</p>
+                <div class="list-container">
+                    <ul id="dynamicList">
+                        <li>Initial item 1</li>
+                        <li>Initial item 2</li>
+                    </ul>
+                </div>
+                <button id="addItem">Add Item</button>
+                <button id="removeItem">Remove Last Item</button>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Part 3. Events</h2>
+
+            <div class="task">
+                <h3>Task 5. Mouse Events</h3>
+                <p>Create a box that changes color when the mouse is over it and restores when the mouse leaves.</p>
+                <div id="mouseBox" class="box">
+                    Hover over me!
+                </div>
+            </div>
+
+            <div class="task">
+                <h3>Task 6. Keyboard Events</h3>
+                <p>Create an input field that displays the current value in real time.</p>
+                <input type="text" id="keyboardInput" placeholder="Type something here...">
+                <p>Current value: <span id="inputValue"></span></p>
+            </div>
+
+            <div class="task">
+                <h3>Task 7. Form Validation</h3>
+                <p>Create a simple form with validation that prevents submission if any field is empty.</p>
+                <form id="validationForm">
+                    <input type="text" id="name" placeholder="Name">
+                    <input type="email" id="email" placeholder="Email">
+                    <input type="password" id="password" placeholder="Password">
+                    <button type="submit">Submit</button>
+                </form>
+                <div id="formError" class="error"></div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Part 4. Mini Project — Interactive To-Do List</h2>
+
+            <div class="task">
+                <h3>Task 8. Build a To-Do App</h3>
+                <p>Create a text input and an "Add Task" button. When a task is added, display it in a list with a "Delete" button next to it. Add functionality to mark tasks as completed.</p>
+
+                <div class="todo-app">
+                    <input type="text" id="taskInput" placeholder="Enter a new task">
+                    <button id="addTask">Add Task</button>
+
+                    <div class="list-container">
+                        <ul id="taskList">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Assignment #6 - JavaScript Basics | Completed with modern design</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
